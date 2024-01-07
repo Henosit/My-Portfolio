@@ -170,7 +170,7 @@ img {
 }
 
 #contact .form-control:focus {
-  border-color: var(--color-brand)
+  border-color: var(--color-brand);
   box-shadow: none;
 }
 
