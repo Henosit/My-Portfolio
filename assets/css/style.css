@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
 :root {
-  --color-body: #b6cbce;
-  --color-heading: #eef3db;
-  --color-base: #033f47;
-  --color-base2: #022a30;
-  --color-brand: #5af54c;
-  --color-brand2: #4fbf20;
+  --color-body: #b6cec8;
+  --color-heading: #eaf3db;
+  --color-base: #034730;
+  --color-base2: #023024;
+  --color-brand: #506de1;
+  --color-brand2: #6e8afb;
   --sidebar-width: 250px;
   --sidebar-width-extand: 270px;
   --font-base: "Bai Jamjuree";
@@ -100,7 +100,7 @@ img {
   .navbar {
     min-height: 100vh;
     width: var(--sidebar-width);
-    background: linear-gradient(rgba(3, 63, 71, 0.5), rgba(3, 63, 71, 0.9)),
+    background: linear-gradient(rgba(80,109,225, 0.7), rgba(80,109,225,0.7)),
       url(../images/sidebar-img.jpg);
     background-size: cover;
     background-position: center;
@@ -161,4 +161,36 @@ img {
 
 .card-custom:hover .card-custom-image img {
   transform: scale(1.1);
+}
+
+/* CONTACT */
+#contact .form-control {
+  background-color: var(--color-base);
+  border-color: var(--color-base);
+  color: var(--color-body);
+}
+
+#contact .form-control:focus {
+  border-color: var(--color-brand)
+  box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+  color: var(--color-body);
+}
+
+#contact input.form-control {
+  height: 44px;
+}
+
+/* FOOTER- Social Icons */
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-base);
+  border-radius: 100px;
+  font-size: 24px;
 }
